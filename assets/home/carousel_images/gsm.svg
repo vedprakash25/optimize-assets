@@ -1,0 +1,19 @@
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="307.75" y1="829.98" x2="307.75" y2="315.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#05dab4"/>
+      <stop offset="1" stop-color="#0acd77"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="423.87" y1="829.98" x2="423.87" y2="315.95" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="539.99" y1="829.98" x2="539.99" y2="315.95" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="656.11" y1="829.98" x2="656.11" y2="315.95" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="772.23" y1="829.98" x2="772.23" y2="315.95" xlink:href="#linear-gradient"/>
+  </defs>
+  <circle cx="539.99" cy="540.46" r="459.88" style="fill: none; stroke: #09d188; stroke-linecap: round; stroke-linejoin: round; stroke-width: 39.64px;"/>
+  <rect x="282.97" y="636.97" width="49.54" height="126.96" rx="24.77" ry="24.77" style="fill: url(#linear-gradient);"/>
+  <rect x="399.09" y="556.97" width="49.54" height="206.95" rx="24.77" ry="24.77" style="fill: url(#linear-gradient-2);"/>
+  <rect x="515.22" y="476.98" width="49.54" height="286.95" rx="24.77" ry="24.77" style="fill: url(#linear-gradient-3);"/>
+  <rect x="631.34" y="396.98" width="49.54" height="366.94" rx="24.77" ry="24.77" style="fill: url(#linear-gradient-4);"/>
+  <rect x="747.46" y="316.99" width="49.54" height="446.94" rx="24.77" ry="24.77" style="fill: url(#linear-gradient-5);"/>
+</svg>

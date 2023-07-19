@@ -1,0 +1,16 @@
+
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#0ACE7D;stroke-width:44.6216;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:url(#SVGID_1_);}
+</style>
+<circle class="st0" cx="540" cy="540.5" r="517.7"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="245.5514" y1="539.5464" x2="834.4158" y2="539.5464" gradientTransform="matrix(1 0 0 -1 0 1080)">
+	<stop  offset="0" style="stop-color:#05DAB4"/>
+	<stop  offset="1" style="stop-color:#0ACD77"/>
+</linearGradient>
+<polygon class="st1" points="834.4,450.4 834.4,766.7 739.1,766.7 739.1,605.7 700.9,605.7 700.9,766.7 619.1,766.7 619.1,605.7 
+	580.9,605.7 580.9,766.7 499.1,766.7 499.1,605.7 460.9,605.7 460.9,766.7 379.1,766.7 379.1,605.7 341.1,605.7 341.1,766.7 
+	245.6,766.7 245.6,450.4 320.6,450.4 320.6,393.6 410.6,393.6 410.6,314.2 669.6,314.2 669.6,393.6 759.6,393.6 759.6,450.4 "/>
+</svg>
