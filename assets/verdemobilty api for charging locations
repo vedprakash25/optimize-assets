@@ -1,0 +1,369 @@
+Live Environment:
+<APIBaseUrl>: http://api.verdemobility.com:5000
+Username : yagna@blacksof.com
+Create password link is sent to your email id
+
+
+
+// user data 
+
+{
+  "data": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InlhZ25hQGJsYWNrc29mLmNvbSIsImp0aSI6ImYyMjBmZWQ5LTcwZjgtNDA5ZC1iNjRmLTViODViZmY2MDAzNSIsImlhdCI6IjE2NjQzMzkwMjE0MjciLCJVc2VySWQiOiIxMDAiLCJDbGllbnRJZCI6IjEiLCJBcHBJZCI6IiIsIlBBUlRORVJfSUQiOiIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBbmFseXN0IiwibmJmIjoxNjY0MjUyNjIxLCJleHAiOjE2NjQzMzkwMjEsImlzcyI6Imh0dHBzOi8vYXBpLnZlcmRlbW9iaWxpdHkuY29tIiwiYXVkIjoiaHR0cHM6Ly9hcHAudmVyZGVtb2JpbGl0eS5jb20ifQ.nXYarAOtqK19q5RRU8b-8IkxtUfjsrOeej7K9M9Y1EE",
+    "tokenType": "bearer",
+    "refreshToken": "4ywhFc7z8gpPG8YmREpCryLqYr0pnHkQiXRjDsbx3zg=",
+    "accessTokenExpiryEpochTime": 1664339021427.0,
+    "role": "Analyst",
+    "firstName": "Yagna",
+    "lastName": "Blacksof",
+    "emailAddress": "yagna@blacksof.com",
+    "clientKey": "0f2ba6b7-a944-42f9-a02a-5bd72513d39f",
+    "userKey": "8e0ce92d-d171-4290-97c2-5f95b8788f9a",
+    "profileImageUrl": null,
+    "profileImageThumbUrl": null,
+    "currencySymbol": "₹",
+    "currencyCode": "INR",
+    "partnerKey": null,
+    "ocppClientName": "verdemobility",
+    "clientLogoFilePath": "https://api.verdemobility.com/logo/b3efe2df-922a-4283-908b-a7cf13808e77.png",
+    "countryId": 99,
+    "phone": null,
+    "portalURL": "https://app.verdemobility.com"
+  },
+  "errors": null,
+  "message": "Login successful",
+  "returnStatus": true
+}
+
+* API to get charge point details by charge point id:
+----------------------------------------------------
+GET <APIBaseUrl>/api/v1/charge-point/{chargePointId}
+header : Authorization: bearer <acccess_token>
+Response :
+{
+  "data": {
+    "chargePointType": "CHARGE_POINT_TYPE_COMMERCIAL_PUBLIC",
+    "chargePointTypeDisplay": "Commercial Public",
+    "chargePointTemplateId": null,
+    "chargingZoneId": 1,
+    "manufactureDate": 1651646595135,
+    "integrationDate": 1651646595135,
+    "networkType": "NETWORK_TYPE_CELLULAR",
+    "networkTypeDisplay": "Cellular",
+    "chargeBox": "slsoffice-hybrid",
+    "systemStatus": "CHARGE_POINT_STATUS_ACTIVE",
+    "systemStatusDisplay": "Active",
+    "hardwareStatus": "CHARGE_POINT_PRESENCE_STATUS_ONLINE",
+    "hardwareStatusDisplay": "online",
+    "updatedDate": 1663021200831,
+    "isManagedByOperator": true,
+    "networkProtocol": "OCPP_NETWORK_PROTOCOL_OCPP_1_6_JSON",
+    "networkProtocolDisplay": "OCPP 1.6 JSON",
+    "networkPassword": "",
+    "isEncrypted": false,
+    "isUsesAuthentication": false,
+    "isWithoutAuthorization": false,
+    "enableLocalAuthList": false,
+    "enableAutoFaultRecovery": false,
+    "enableLoadManagement": true,
+    "maxCurrent": null,
+    "phases": "EVSE_PHASES_3_PHASE",
+    "partnerId": null,
+    "partnerName": null,
+    "contractId": null,
+    "contractName": null,
+    "reservationSupport": true,
+    "createdDate": 1651646989221.619,
+    "chargePointHardware": {
+      "model": "Hybrid ",
+      "vendor": "SLS",
+      "chargeBoxSerialNumber": "1347211900096",
+      "serialNumber": "1347211900096",
+      "firmwareVersion": "6.0.6:2.1.7:",
+      "iccid": null,
+      "imsi": null,
+      "meterSerialNumber": null,
+      "meterType": "INTERNAL",
+      "hardwareUpdatedDate": null,
+      "updatedDate": 1662885017572
+    },
+    "chargePointReservationTime": [
+      {
+        "chargePointReservationTimeId": 1,
+        "reservationStartTime": 1651602600000,
+        "reservationEndTime": 1651688999000
+      }
+    ],
+    "connectionStatus": "CONNECTION_STATUS_AVAILABLE",
+    "connectionStatusDisplay": "Available",
+    "phasesDisplay": "3-Phase",
+    "phaseRotation": "EVSE_PHASE_ROTATION_RST",
+    "phaseRotationDisplay": "RST",
+    "chargingZoneName": "System Level Solutions",
+    "chargingZone": {
+      "status": "CHARGING_ZONE_STATUS_ACTIVE",
+      "statusDisplay": "Active",
+      "locationId": 1,
+      "title": "",
+      "description": "",
+      "location": {
+        "shortDescription": "",
+        "detailedDescription": null,
+        "latitude": 22.536388,
+        "longitude": 72.927058,
+        "threeWordsAddress": "",
+        "address": "Plot#32, Zone-D/4, Phase 1 GIDC Estate, Vithal Udyognagar, GIDC, Vitthal Udyognagar INA, Gujarat 388121, India",
+        "postcode": "388121",
+        "region": "Gujarat",
+        "city": "Vitthal Udyognagar INA",
+        "country": "IN",
+        "locationImage": {
+          "imageName": "SLS Office, Anand",
+          "imagePath": [
+            "https://api.verdemobility.com/location-images/cba961ff-a6ee-425e-b498-d2dc857d182a.jfif"
+          ],
+          "chargePointLocationImageId": 1
+        },
+        "chargePointLocationId": 1,
+        "name": "GIDC-V.U. Nagar, Anand"
+      },
+      "chargingZoneId": 1,
+      "name": "System Level Solutions"
+    },
+    "chargePointEvse": [
+      {
+        "chargePointId": 1,
+        "chargeBox": "slsoffice-hybrid",
+        "type": "EVSE_TYPE_AC",
+        "typeDisplay": "AC",
+        "tariffId": 1,
+        "reservationTariffId": 1,
+        "networkId": "1",
+        "maxPower": 7.4,
+        "tags": null,
+        "status": "EVSE_STATUS_ACTIVE",
+        "statusDisplay": "Active",
+        "maxCurrent": 32,
+        "phases": "EVSE_PHASES_SINGLE_PHASE",
+        "phasesDisplay": "Single Phase",
+        "phaseRotation": "EVSE_CONNECTED_PHASE_L1",
+        "phaseRotationDisplay": "L1",
+        "hardwareStatus": "CP_ACTION_STATUS_AVAILABLE",
+        "hardwareStatusDisplay": "AVAILABLE",
+        "tariff": {
+          "name": "Initial Free Tariff",
+          "description": "",
+          "additionalInformation": "",
+          "learnMoreUrl": "",
+          "tariffType": "TARIFF_TYPE_FREE",
+          "payAndCharge": false,
+          "tariffTypeDisplay": "Free",
+          "pricePerSession": 0,
+          "connectionFee": 0,
+          "pricePerKwh": 0,
+          "dayTariffStart": null,
+          "dayPricePerKwh": null,
+          "nightTariffStart": null,
+          "nightPricePerKwh": null,
+          "taxPercentage": 0,
+          "sessionMaxTime": 0,
+          "energyExceedsKwh": 0,
+          "tariffId": 1
+        },
+        "reservationTariff": {
+          "description": "",
+          "learnMoreUrl": "",
+          "reservationTariffType": "RESERVATION_TARIFF_TYPE_PER_HOUR",
+          "payAndCharge": true,
+          "minDurationHours": 0.5,
+          "maxDurationHours": 0.5,
+          "disableReservationDurationHours": 4,
+          "maxNoOfReservationPerDayPerUser": 10,
+          "maxNoOfDays": 3,
+          "pricePerHour": 10,
+          "pricePerReservation": 0,
+          "taxPercentage": 10,
+          "name": "ResrvationTestTatiff",
+          "reservationTariffTypeDisplay": "Price Per Duration",
+          "createdDate": 1659948168028,
+          "updatedDate": null,
+          "reservationTariffId": 1
+        },
+        "enableReservation": true,
+        "lastChargingSessionDate": null,
+        "lastChargingSessionId": 0,
+        "enableOtp": false,
+        "chargePointEvseConnector": [
+          {
+            "chargePointEvseId": 1,
+            "type": "CONNECTOR_TYPE_TYPE_2",
+            "typeDisplay": "Type 2",
+            "typeResourceUrl": "https://api.verdemobility.com/connector-type/CONNECTOR_TYPE_TYPE_2.png",
+            "format": "CONNECTOR_FORMAT_CABLE",
+            "formatDisplay": "Cable",
+            "status": "CONNECTOR_STATUS_ACTIVE",
+            "statusDisplay": "Active",
+            "chargePointEvse": {
+              "chargePointEvseId": 1,
+              "qrCodeId": 750436
+            },
+            "chargePointEvseConnectorId": 1
+          }
+        ],
+        "chargePointEvseId": 1,
+        "qrCodeId": 750436
+      },
+      {
+        "chargePointId": 1,
+        "chargeBox": "slsoffice-hybrid",
+        "type": "EVSE_TYPE_AC",
+        "typeDisplay": "AC",
+        "tariffId": 1,
+        "reservationTariffId": null,
+        "networkId": "2",
+        "maxPower": 3.3,
+        "tags": null,
+        "status": "EVSE_STATUS_ACTIVE",
+        "statusDisplay": "Active",
+        "maxCurrent": 16,
+        "phases": "EVSE_PHASES_SINGLE_PHASE",
+        "phasesDisplay": "Single Phase",
+        "phaseRotation": "EVSE_CONNECTED_PHASE_L1",
+        "phaseRotationDisplay": "L1",
+        "hardwareStatus": "CP_ACTION_STATUS_AVAILABLE",
+        "hardwareStatusDisplay": "AVAILABLE",
+        "tariff": {
+          "name": "Initial Free Tariff",
+          "description": "",
+          "additionalInformation": "",
+          "learnMoreUrl": "",
+          "tariffType": "TARIFF_TYPE_FREE",
+          "payAndCharge": false,
+          "tariffTypeDisplay": "Free",
+          "pricePerSession": 0,
+          "connectionFee": 0,
+          "pricePerKwh": 0,
+          "dayTariffStart": null,
+          "dayPricePerKwh": null,
+          "nightTariffStart": null,
+          "nightPricePerKwh": null,
+          "taxPercentage": 0,
+          "sessionMaxTime": 0,
+          "energyExceedsKwh": 0,
+          "tariffId": 1
+        },
+        "reservationTariff": null,
+        "enableReservation": false,
+        "lastChargingSessionDate": null,
+        "lastChargingSessionId": 0,
+        "enableOtp": false,
+        "chargePointEvseConnector": [
+          {
+            "chargePointEvseId": 2,
+            "type": "CONNECTOR_TYPE_AC001",
+            "typeDisplay": "AC001",
+            "typeResourceUrl": "https://api.verdemobility.com/connector-type/CONNECTOR_TYPE_AC001.png",
+            "format": "CONNECTOR_FORMAT_CABLE",
+            "formatDisplay": "Cable",
+            "status": "CONNECTOR_STATUS_ACTIVE",
+            "statusDisplay": "Active",
+            "chargePointEvse": {
+              "chargePointEvseId": 2,
+              "qrCodeId": 960138
+            },
+            "chargePointEvseConnectorId": 2
+          }
+        ],
+        "chargePointEvseId": 2,
+        "qrCodeId": 960138
+      },
+      {
+        "chargePointId": 1,
+        "chargeBox": "slsoffice-hybrid",
+        "type": "EVSE_TYPE_AC",
+        "typeDisplay": "AC",
+        "tariffId": 1,
+        "reservationTariffId": null,
+        "networkId": "3",
+        "maxPower": 3.3,
+        "tags": null,
+        "status": "EVSE_STATUS_ACTIVE",
+        "statusDisplay": "Active",
+        "maxCurrent": 16,
+        "phases": "EVSE_PHASES_SINGLE_PHASE",
+        "phasesDisplay": "Single Phase",
+        "phaseRotation": "EVSE_CONNECTED_PHASE_L1",
+        "phaseRotationDisplay": "L1",
+        "hardwareStatus": "CP_ACTION_STATUS_AVAILABLE",
+        "hardwareStatusDisplay": "AVAILABLE",
+        "tariff": {
+          "name": "Initial Free Tariff",
+          "description": "",
+          "additionalInformation": "",
+          "learnMoreUrl": "",
+          "tariffType": "TARIFF_TYPE_FREE",
+          "payAndCharge": false,
+          "tariffTypeDisplay": "Free",
+          "pricePerSession": 0,
+          "connectionFee": 0,
+          "pricePerKwh": 0,
+          "dayTariffStart": null,
+          "dayPricePerKwh": null,
+          "nightTariffStart": null,
+          "nightPricePerKwh": null,
+          "taxPercentage": 0,
+          "sessionMaxTime": 0,
+          "energyExceedsKwh": 0,
+          "tariffId": 1
+        },
+        "reservationTariff": null,
+        "enableReservation": false,
+        "lastChargingSessionDate": null,
+        "lastChargingSessionId": 0,
+        "enableOtp": false,
+        "chargePointEvseConnector": [
+          {
+            "chargePointEvseId": 3,
+            "type": "CONNECTOR_TYPE_AC001",
+            "typeDisplay": "AC001",
+            "typeResourceUrl": "https://api.verdemobility.com/connector-type/CONNECTOR_TYPE_AC001.png",
+            "format": "CONNECTOR_FORMAT_SOCKET",
+            "formatDisplay": "Socket",
+            "status": "CONNECTOR_STATUS_ACTIVE",
+            "statusDisplay": "Active",
+            "chargePointEvse": {
+              "chargePointEvseId": 3,
+              "qrCodeId": 732235
+            },
+            "chargePointEvseConnectorId": 3
+          }
+        ],
+        "chargePointEvseId": 3,
+        "qrCodeId": 732235
+      }
+    ],
+    "amenities": [
+      {
+        "chargePointAmenitiesMappingId": 1,
+        "amenitiesClientMappingId": 11,
+        "name": "Parking",
+        "description": null,
+        "imageUrl": "https://api.verdemobility.com/amenities-images/parking.png",
+        "color": null
+      },
+      {
+        "chargePointAmenitiesMappingId": 2,
+        "amenitiesClientMappingId": 2,
+        "name": "Auto Service Center",
+        "description": null,
+        "imageUrl": "https://api.verdemobility.com/amenities-images/auto_service_center.png",
+        "color": null
+      }
+    ],
+    "chargePointId": 1,
+    "name": "System Level Solutions Office"
+  },
+  "errors": null,
+  "message": "",
+  "returnStatus": true
+}
